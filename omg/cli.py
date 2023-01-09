@@ -101,7 +101,7 @@ def projects_cmd(path, loglevel):
 # omg *get*
 @cli.command("get")
 @click.argument("objects", nargs=-1, shell_complete=complete_get)
-@click.option("--output", "-o", type=click.Choice(["yaml", "json", "wide", "name"]))
+@click.option("--output", "-o", type=click.Choice(["yaml", "json", "wide", "name", "jsonpath"]))
 @click.option("--show-labels", is_flag=True, type=bool)
 @o_log_level
 @o_namespace
